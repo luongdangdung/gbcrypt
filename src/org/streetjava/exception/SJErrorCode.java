@@ -7,7 +7,8 @@ package org.streetjava.exception;
 public enum SJErrorCode implements SJError{
     TECHNICAL,
     SHA1_CHECKSUM_NOT_EQUAL,
-    HEADER_SIGN_INCORRECT
+    HEADER_SIGN_INCORRECT,
+    INCORECT_VERSION
     ;
 
     @Override

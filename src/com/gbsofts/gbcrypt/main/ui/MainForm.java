@@ -1,6 +1,7 @@
 package com.gbsofts.gbcrypt.main.ui;
 
 import com.gbsofts.gbcrypt.config.CustomConfig;
+import com.gbsofts.gbcrypt.config.SystemConfig;
 import com.gbsofts.gbcrypt.util.UIUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,6 +29,7 @@ public class MainForm extends javax.swing.JFrame {
     public MainForm() {
         initComponents();
         UIUtil.SET_FRAME_CENTER(this);
+        lblVersion.setText("Version "+ SystemConfig.VERSION + "." + SystemConfig.MINOR_VERSION);
     }
 
     /**
@@ -43,6 +45,7 @@ public class MainForm extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
+        lblVersion = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnKey = new javax.swing.JMenu();
         mnGenerateKeys = new javax.swing.JMenuItem();
@@ -85,6 +88,8 @@ public class MainForm extends javax.swing.JFrame {
         );
 
         jLabel2.setText("Developed by Luong Dang Dung");
+
+        lblVersion.setText("Version");
 
         mnKey.setText("Key");
 
@@ -180,7 +185,9 @@ public class MainForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(lblVersion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)))
                 .addContainerGap())
         );
@@ -190,7 +197,9 @@ public class MainForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(lblVersion))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -301,6 +310,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblVersion;
     private javax.swing.JMenuItem mnConfiguration;
     private javax.swing.JMenu mnDecrypt;
     private javax.swing.JMenuItem mnDecryptDir;

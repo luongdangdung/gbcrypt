@@ -194,7 +194,8 @@ public class FileCryptography implements FileCryptographal {
     }
 
     /**
-     * 0.1 read encrypted header sign 1. read version of header <br/>
+     * 0.1 read encrypted header sign <br/>
+     * 1. read version of header <br/>
      * 2. read length of SHA1 checksum <br/>
      * 3. read SHA1 checksum bytes <br/>
      * 3.1 create temp file for output file <br/>
@@ -223,12 +224,17 @@ public class FileCryptography implements FileCryptographal {
             dis.read(headerSign);
 
             if (!Arrays.equals(SystemConfig.ENCRYPTED_HEADER_BLOCK, headerSign)) {
-                logger.error(SJErrorCode.HEADER_SIGN_INCORRECT.toString()+":"+inputFile);
+                logger.error(SJErrorCode.HEADER_SIGN_INCORRECT.toString()+ ":" + inputFile);
                 return;
             }
 
             //1. read version of header
             int version = dis.readInt();
+            if (version != SystemConfig.VERSION){
+                logger.error("System version:"+SystemConfig.VERSION + "----" + "Encrypt version:"+version);
+                logger.error(SJErrorCode.INCORECT_VERSION.toString() + ":" + inputFile);
+                return;
+            }
 
             //2. read length of SHA1 checksum
             int checksumSize = dis.readInt();

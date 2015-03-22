@@ -6,7 +6,8 @@ package com.gbsofts.gbcrypt.config;
  * @author Luong Dang Dung
  */
 public class SystemConfig {
-    public final static int VERSION = 1;
+    public final static int VERSION = 1; //it is major version, when crypto logic change, this version will be inceased
+    public final static int MINOR_VERSION = 1; //it is minor version, when something change without crypto logic, this minor version will be inceased
     public final static byte[] ENCRYPTED_HEADER_BLOCK =  {24,0,5,84}; //the sign which detect encrypted file header
     public static int BLOCK_RSA_READ = CustomConfig.RSA_LENGTH / 8 - 11;
     public final static String ENCRYPTED_EXTENSION = ".gbecrypted";
