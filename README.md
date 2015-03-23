@@ -22,4 +22,7 @@ Click on your OS version to download
 ## How to use  
 [Read user guide online](https://docs.google.com/document/d/1oTHg9dCe3Thh93-wDWYzX7AGd5cxd8x9Lei_-sEq2TA/edit?usp=sharing)  
 
+##Contact  
+You can reach me at luongdangdung@misamap.com
+or via skype **luongdangdung**
 
