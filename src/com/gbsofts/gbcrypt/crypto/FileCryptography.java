@@ -200,9 +200,11 @@ public class FileCryptography implements FileCryptographal {
      * 3. read SHA1 checksum bytes <br/>
      * 3.1 create temp file for output file <br/>
      * 4. read child count <br/>
-     * 5. read length encrypted of child1 6. read bytes of child1 7. decrypt
-     * child1 --> content1 8. write content1 to outputfile 9. loop (6),(7),(8)
-     * for other child <br/>
+     * 5. read length encrypted of child1 <br/>
+     * 6. read bytes of child1 <br/>
+     * 7. decrypt child1 --> content1 <br/> 
+     * 8. write content1 to outputfile <br/>
+     * 9. loop (6),(7),(8) for other child <br/>
      *
      * @param inputFile
      * @param outputFile
