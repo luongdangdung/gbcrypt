@@ -68,7 +68,7 @@ public class MainForm extends javax.swing.JFrame {
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
-        jTextArea1.setText("Welcome to GBCrypt\n\nIf this is first time you use GBCrypt, please pay attention to read some guidelines:\n\n1. Choose Key / Generate Keys (for first time only, the second time in use, you can pass this step)\n\n2. Choose Encrypt or Decrypt menu\n- If you want to secure file, you can choose Encrypt / Encrypt File\n- if you want to secure whole directory, you can choose Encrypt / Encrypt Directory\n- If you want to remove secure of file, you can choose Decrypt / Decrypt File\n- If you want to remove secure of directory, you can choose Decrypt / Decrypt Directory\n\n3. For futher infomation, please choose Help / User Guide");
+        jTextArea1.setText("Welcome to GBCrypt\n\nIf this is first time you use GBCrypt, please pay attention to read some guidelines:\n\n1. Choose Key / Generate Keys (for first time only, the second time in use, you can pass this step)\n\n2. Choose Encrypt or Decrypt menu\n- If you want to secure file, you can choose Encrypt / Encrypt File\n- if you want to secure whole directory, you can choose Encrypt / Encrypt Directory\n- If you want to remove secure of file, you can choose Decrypt / Decrypt File\n- If you want to remove secure of directory, you can choose Decrypt / Decrypt Directory\n\n3. For futher infomation, please access http://gbcrypt.misamap.com");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
