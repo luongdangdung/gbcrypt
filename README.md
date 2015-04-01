@@ -10,6 +10,8 @@ GBCrypt can run without require any installation. Just unzip downloaded file, an
 
 Click on your OS version to download
 
+[Mac OS X](https://googledrive.com/host/0B2GQhZjN0aqRUUxib3Z4SHpsM1U/gbcrypt_mac_64bit.zip) 
+
 [Microsoft Windows XP/Vista/7/8 32bit version](https://googledrive.com/host/0B2GQhZjN0aqRUUxib3Z4SHpsM1U/gbcrypt_windows_32bit.zip)  
 
 [Microsoft Windows XP/Vista/7/8 64bit version](https://googledrive.com/host/0B2GQhZjN0aqRUUxib3Z4SHpsM1U/gbcrypt_windows_64bit.zip)  
